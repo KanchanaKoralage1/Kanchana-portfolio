@@ -1,35 +1,52 @@
-import React from 'react'
-import { Spotlight } from './ui/Spotlight'
-import { cn } from '@/lib/utils'
+import React from "react";
+import { Spotlight } from "./ui/Spotlight";
+import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div className="pb-20 pt-36">
       <div>
-        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
-        <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>
-        <Spotlight className='top-28 left-80  h-[80vh] w-[50vw]' fill='blue'/>
-
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          fill="white"
+        />
+        <Spotlight
+          className="top-10 left-full h-[80vh] w-[50vw]"
+          fill="purple"
+        />
+        <Spotlight className="top-28 left-80  h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="h-screen w-full  bg-white dark:bg-black dark:bg-grid-white/[0.3] bg-grid-black/[0.2] relative flex items-center justify-center">
-      <div
-        className={cn(
-          "absolute inset-0",
-          "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-        )}
-      />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"/>
-      <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
-        Backgrounds is here
-      </p>
-    </div>
-    </div>
+      <div className="h-screen w-full  bg-white dark:bg-black dark:bg-grid-white/[0.3] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+        <div
+          className={cn(
+            "absolute inset-0",
+            "[background-size:40px_40px]",
+            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+          )}
+        />
+        {/* Radial gradient for the container to give a faded look */}
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] dark:bg-black" />
+        
+      </div>
 
-  )
-}
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          
 
-export default Hero
+          <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepst into Seamless User Experience"/>
+
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi I&apos;m Kanchana Koralage, A Software Engineer Lived in Colombo</p>
+
+          <a href="#"> <MagicButton title="Let&apos;s see my Works"/></a>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
