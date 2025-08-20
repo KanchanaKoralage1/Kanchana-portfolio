@@ -1,5 +1,7 @@
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/mode-toggle";
+import { FloatingNav } from "@/components/ui/FloatingNav";
 
 
 export default function Home() {
@@ -11,8 +13,11 @@ export default function Home() {
         </div>
 
        <div className="max-w-7xl w-full">
-        
+        <FloatingNav navItems={[
+          {name:'Home', link:'/'}
+        ]}/>
         <Hero />
+        <Grid/>
        </div>
 
       </main>
