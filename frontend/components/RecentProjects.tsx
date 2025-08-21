@@ -8,7 +8,7 @@ const RecentProjects = () => {
   return (
     <div className='py-20' id='projects'>
         <h1 className='heading'>
-            A small section of {' '}
+            This is some of my {' '}
         <span className="text-purple-800">Recent projects</span>
         </h1>
 
