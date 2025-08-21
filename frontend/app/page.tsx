@@ -1,7 +1,9 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/mode-toggle";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data";
 
 
 export default function Home() {
@@ -13,11 +15,10 @@ export default function Home() {
         </div>
 
        <div className="max-w-7xl w-full">
-        <FloatingNav navItems={[
-          {name:'Home', link:'/'}
-        ]}/>
+        <FloatingNav navItems={navItems}/>
         <Hero />
         <Grid/>
+        <RecentProjects/>
        </div>
 
       </main>
