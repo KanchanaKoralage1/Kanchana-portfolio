@@ -1,14 +1,14 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Final-year IT undergraduate at SLIIT with hands-on experience in full-stack development",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,8 +18,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Based in Sri Lanka, flexible with global communications",
+    description: "Location & Availability",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My Tech Stack",
+    description: "MERN, React Native, Spring Boot, Asp.Net, Flutter",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,8 +38,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "Passionate about building scalable applications and self-learning.",
+    description: "Tech Enthusiast",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -49,8 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently seeking internship opportunities in software development and DevOps.",
+    description: "Career Goals",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,8 +59,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Let's connect and discuss opportunities!",
+    description: "Contact Me",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -215,3 +215,76 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+
+export const skillsData = {
+  education: [
+    {
+      school: "Sri Lanka Institute of Information Technology (SLIIT)",
+      degree: "BSc (Hons) in Information Technology",
+      period: "Oct 2022 - Present",
+    },
+    {
+      school: "Ananda Central College, Elpitiya",
+      degree: "Advanced Level (AL)",
+      period: "May 2017 - 2019",
+    },
+  ],
+  softSkills: [
+    "Teamwork",
+    "Leadership",
+    "Communication",
+    "Problem-solving",
+    "Creativity",
+    "Adaptability",
+    "Time Management",
+  ],
+  technical: {
+    programmingLanguages: [
+      "JavaScript",
+      "Java",
+      "Kotlin",
+      "Python",
+      "SQL",
+      "HTML",
+      "CSS",
+    ],
+    frameworks: [
+      "React",
+      "React Native",
+      "Node.js",
+      "Express.js",
+      "Spring Boot",
+    ],
+    databases: ["MongoDB", "MySQL", "SQLite"],
+    tools: [
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Jenkins",
+      "Docker",
+      "Google Cloud Platform",
+      "Postman",
+      "Figma",
+      "SonarQube",
+      "Trello",
+    ],
+    ideTesting: [
+      "VS Code",
+      "IntelliJ IDEA",
+      "Eclipse",
+      "Android Studio",
+      "JUnit",
+      "Postman",
+      "Selenium",
+    ],
+    concepts: [
+      "RESTful APIs",
+      "OOP",
+      "MVC",
+      "Data Structures & Algorithms",
+      "CI/CD",
+      "Microservices",
+    ],
+  },
+};
