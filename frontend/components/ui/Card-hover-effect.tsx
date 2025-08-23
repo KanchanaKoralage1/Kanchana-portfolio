@@ -13,6 +13,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    image?: string;
   }[];
   className?: string;
 }) => {
@@ -50,10 +51,12 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+
+          <Card image={item.image}>
+            <CardTitle className="text-zinc-100 text-shadow">{item.title}</CardTitle>
+            <CardDescription className="text-zinc-100 text-shadow">{item.description}</CardDescription>
           </Card>
+          
         </a>
       ))}
     </div>
@@ -63,20 +66,26 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  image,
 }: {
   className?: string;
   children: React.ReactNode;
+  image?: string;
 }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 group",
         className
       )}
     >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
-      </div>
+      {image && (
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-300"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      )}
+      <div className="relative z-50 p-4">{children}</div>
     </div>
   );
 };

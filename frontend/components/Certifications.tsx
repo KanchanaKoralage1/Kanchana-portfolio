@@ -12,6 +12,7 @@ const Certifications = () => {
         </h1>
       </div>
       <HoverEffect items={certifications} />
+      
     </div>
   )
 }

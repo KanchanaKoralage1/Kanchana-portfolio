@@ -199,39 +199,45 @@ export const skillsData = {
 
 export const certifications = [
   {
-    title: "Stripe",
+    title: "Oracle Certificate",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5647B355DA37B44C8ACFEE2E8A44F4AA5C4FAD5F7505E07377A6866DF510555",
+    image:"oracle.png"
   },
   {
-    title: "Netflix",
+    title: "Learnkarts Certificate",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Git with GitLab and BitBucket",
+    link: "https://www.coursera.org/account/accomplishments/verify/U6PJC12BVM81",
+    image:"bitbucket.png"
   },
   {
-    title: "Google",
+    title: "Microsoft Certificate",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Back-End Development with .NET",
+    link: "https://www.coursera.org/account/accomplishments/verify/ZEAD242VMLIK",
+    image:"net.png"
   },
   {
-    title: "Meta",
+    title: "Microsoft Certificate",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Introduction to Programming With C#",
+    link: "https://www.coursera.org/account/accomplishments/verify/DIVH4D85908A",
+    image:"c.png"
   },
   {
-    title: "Amazon",
+    title: "Microsoft Certificate",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Foundations of Coding Full-Stack ",
+    link: "https://www.coursera.org/account/accomplishments/verify/IWGAA1FMD6TD",
+    image:"fullstack.png"
   },
   {
-    title: "Microsoft",
+    title: "Udemy Certificate",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Learn DevOps: CI/CD with Jenkins using Pipelines and Docker",
+    link: "https://www.udemy.com/certificate/UC-e10a48de-ec35-4136-bd36-b58e9be76931/",
+    image:"Jenkins.jpg"
   },
 ];
