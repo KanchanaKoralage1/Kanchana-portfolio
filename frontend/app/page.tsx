@@ -1,3 +1,5 @@
+import Certifications from "@/components/Certifications";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -21,6 +23,8 @@ export default function Home() {
         <Grid/>
         <RecentProjects/>
         <Skills/>
+        <Certifications/>
+        <Footer/>
        </div>
 
       </main>

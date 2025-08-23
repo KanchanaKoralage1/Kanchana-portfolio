@@ -1,15 +1,28 @@
-import { Spotlight } from "./ui/Spotlight"
-import { cn } from "@/lib/utils"
-import { TextGenerateEffect } from "./ui/TextGenerateEffect"
-import MagicButton from "./ui/MagicButton"
-import { FaLocationArrow, FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa6"
+import { Spotlight } from "./ui/Spotlight";
+import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import {
+  FaLocationArrow,
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaPhone,
+  FaFilePdf,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-15">
       <div>
-        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-        <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          fill="white"
+        />
+        <Spotlight
+          className="top-10 left-full h-[80vh] w-[50vw]"
+          fill="purple"
+        />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
         <Spotlight className="top-40 right-80 h-[60vh] w-[40vw]" fill="cyan" />
       </div>
@@ -20,7 +33,7 @@ const Hero = () => {
             "absolute inset-0",
             "[background-size:60px_60px]",
             "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
         {/* Enhanced radial gradient with better fade effect */}
@@ -35,20 +48,31 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Final-year IT undergraduate at <span className="text-blue-400 font-semibold">SLIIT</span> with hands-on
-            experience in <span className="text-cyan-400 font-semibold">React</span>,{" "}
-            <span className="text-purple-400 font-semibold">React Native</span>, and{" "}
-            <span className="text-blue-400 font-semibold">Spring Boot</span>. Completed multiple solo projects and
-            online certifications. Passionate about{" "}
-            <span className="text-purple-400 font-semibold">Full-Stack development</span>, self-learning, and building
-            scalable applications. Actively seeking an <span className="text-cyan-400 font-semibold">internship</span>{" "}
-            to gain real-world industry experience and contribute to a dynamic software development team.
+            Final-year IT undergraduate at{" "}
+            <span className="text-blue-400 font-semibold">SLIIT</span> with
+            hands-on experience in{" "}
+            <span className="text-cyan-400 font-semibold">React</span>,{" "}
+            <span className="text-purple-400 font-semibold">React Native</span>,
+            and <span className="text-blue-400 font-semibold">Spring Boot</span>
+            . Completed multiple solo projects and online certifications.
+            Passionate about{" "}
+            <span className="text-purple-400 font-semibold">
+              Full-Stack development
+            </span>
+            , self-learning, and building scalable applications. Actively
+            seeking an{" "}
+            <span className="text-cyan-400 font-semibold">internship</span> to
+            gain real-world industry experience and contribute to a dynamic
+            software development team.
           </p>
 
-          <a href="#projects" className="mb-12 transform hover:scale-105 transition-transform duration-300">
+          <a
+            href="#projects"
+            className="mb-12 transform hover:scale-105 transition-transform duration-300"
+          >
             <MagicButton
               title="Explore My Projects"
-              icon={<FaLocationArrow />}
+              icon={<FaLocationArrow className="text-white" />}
               position="right"
               otherClasses="text-lg px-8 py-4"
             />
@@ -77,10 +101,13 @@ const Hero = () => {
                 />
               </a>
 
-              <a href="tel:070-4975336" className="transform hover:scale-110 transition-all duration-300">
+              <a
+                href="tel:070-4975336"
+                className="transform hover:scale-110 transition-all duration-300"
+              >
                 <MagicButton
-                  title="Call"
-                  icon={<FaPhone />}
+                  title="My Resume"
+                  icon={<FaFilePdf/>}
                   position="left"
                   otherClasses="text-sm md:text-base px-4 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 hover:from-green-500/30 hover:to-emerald-500/30"
                 />
@@ -122,7 +149,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
