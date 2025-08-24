@@ -1,0 +1,7 @@
+[build]
+  # Netlify will run this from the repo root; we tell it to use the frontend folder as the base
+  base = "frontend"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
