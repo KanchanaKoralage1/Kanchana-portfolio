@@ -76,32 +76,32 @@ export const projects = [
     id: 1,
     title: "Social Media Application",
     des: "Developed a responsive full-stack social media platform with secure JWT-based authentication, Google OAuth2 login, and real-time messaging using WebSockets. Implemented core features such as post creation/editing, comments, likes, shares, follow/unfollow functionality, and real-time notifications. Designed RESTful APIs with Spring Boot and managed the frontend using React and Tailwind CSS for a modern, mobile-friendly UI. Integrated MySQL for persistent storage and ensured secure data flow through role-based access and token-based authorization.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    img: "/social.png",
+    iconLists: ["/spring.svg", "/tail.svg", "/js.svg", "/gcp.svg", "/sql.svg"],
     link: "https://github.com/KanchanaKoralage1/Social-Media-App",
   },
   {
     id: 2,
     title: "Book Store Mobile App using React Native",
     des: "Amobile app where users can sign up, log in, and share book recommendations. Users can add, edit, or delete book posts with images and ratings.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    img: "/book.png",
+    iconLists: ["/reactnative.svg", "/tail.svg", "/js.svg", "/mongo.svg", "/expo.svg"],
     link: "https://github.com/KanchanaKoralage1/Book-store-Mobile-app",
   },
   {
     id: 3,
     title: "Task Management WebApp",
     des: " A full-stack web application built to streamline team task assignment, tracking, and management. Designed with a responsive UI and secure role-based access for both users and admins, it enhances collaboration and productivity across all devices. Users can login and signup with their google account (OAuth 2.0) And Users can generate documents as well.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    img: "/task.png",
+    iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/gcp.svg", "/mongo.svg"],
     link: "https://github.com/KanchanaKoralage1/Task-Management-WebApp",
   },
   {
     id: 4,
     title: "Library management system",
     des: "This is my recently created full-stack web application that allows users to manage a digital library efficiently. Features include user authentication, book search, CRUD operations for books, image uploads, and a responsive UI. Built using the MERN stack with Cloudinary for image storage.",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    img: "/library.png",
+    iconLists: ["/react.svg", "/tail.svg", "/js.svg", "/mongo.svg", "/cloudinary.svg"],
     link: "https://github.com/KanchanaKoralage1/Library-management",
   },
 ];
@@ -113,10 +113,7 @@ export const socialMedia = [
     id: 1,
     img: "/git.svg",
   },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
+  
   {
     id: 3,
     img: "/link.svg",
@@ -241,3 +238,11 @@ export const certifications = [
     image:"Jenkins.jpg"
   },
 ];
+
+export const cv=[
+  {
+    id:1,
+    title:"Download CV",
+    link:"/kanchanakoralageCV.pdf"
+  }
+]

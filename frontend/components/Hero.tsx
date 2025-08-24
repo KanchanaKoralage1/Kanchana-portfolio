@@ -10,6 +10,7 @@ import {
   FaPhone,
   FaFilePdf,
 } from "react-icons/fa";
+import { cv } from "@/data";
 
 const Hero = () => {
   return (
@@ -101,17 +102,21 @@ const Hero = () => {
                 />
               </a>
 
-              <a
-                href="tel:070-4975336"
-                className="transform hover:scale-110 transition-all duration-300"
-              >
-                <MagicButton
-                  title="My Resume"
-                  icon={<FaFilePdf/>}
-                  position="left"
-                  otherClasses="text-sm md:text-base px-4 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 hover:from-green-500/30 hover:to-emerald-500/30"
-                />
-              </a>
+              {cv.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.link}
+                  download
+                  className="transform hover:scale-110 transition-all duration-300"
+                >
+                  <MagicButton
+                    title={item.title}
+                    icon={<FaFilePdf />}
+                    position="left"
+                    otherClasses="text-sm md:text-base px-4 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 hover:from-green-500/30 hover:to-emerald-500/30"
+                  />
+                </a>
+              ))}
 
               <a
                 href="https://linkedin.com/in/kanchana-koralage"
@@ -128,7 +133,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="https://github.com/Kanchana-Koralage"
+                href="https://github.com/KanchanaKoralage1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-all duration-300"
