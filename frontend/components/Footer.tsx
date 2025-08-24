@@ -15,7 +15,7 @@ const Footer = () => {
        <h1 className="heading lg:max-w-[45vw]">
   Ready to grow and <span className="text-purple-500">create impactful</span> web and mobile experiences?
 </h1>
-        <p className="md:mt-10 my-5 text-center">Reach out to me today and let's discuss how I can help to achive your goals.</p>
+        <p className="md:mt-10 my-5 text-center">Reach out to me today and let&apos;s discuss how I can help to achive your goals.</p>
 
         <a href="mailto:itsmekanchanakoralage@gmail.com">
             <MagicButton
