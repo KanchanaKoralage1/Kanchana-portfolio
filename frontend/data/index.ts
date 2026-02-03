@@ -1,5 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Skills", link: "#skills" },
   { name: "Certifications", link: "#certifications" },
@@ -148,6 +149,8 @@ export const skillsData = {
   technical: {
     programmingLanguages: [
       "JavaScript",
+      "TypeScript",
+      "C#",
       "Java",
       "Kotlin",
       "Python",
@@ -161,26 +164,29 @@ export const skillsData = {
       "Node.js",
       "Express.js",
       "Spring Boot",
+      ".NET ",
+      "Blazor",
     ],
-    databases: ["MongoDB", "MySQL", "SQLite"],
-    tools: [
+    databases: ["MongoDB", "MySQL", "SQLite", "PostgreSQL"],
+    DevOps_and_CICD: [
       "GitHub",
       "GitLab",
+      "GitHub Actions",
       "Bitbucket",
       "Jenkins",
       "Docker",
-      "Google Cloud Platform",
-      "Postman",
-      "Figma",
-      "SonarQube",
-      "Trello",
+      "Kubernetes",
+      "Terraform",
     ],
-    ideTesting: [
-      "VS Code",
-      "IntelliJ IDEA",
-      "Eclipse",
-      "Android Studio",
-      "JUnit",
+    Cloud_Platforms: [
+      "Azure",
+      "AWS",
+      "Oracle Cloud Infrastructure",
+      "Google Cloud Platform",
+    ],
+     Tools: [
+      "Trello",
+      "SonarQube",
       "Postman",
       "Selenium",
     ],
@@ -197,6 +203,21 @@ export const skillsData = {
 
 
 export const certifications = [
+  
+  {
+    title: "Oracle Certificate",
+    description:
+      "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=368A7098EA6DD0980960A37BB693684AF3EDACBFE1C65163D5A714F3DB6BEF7B",
+    image:"devops.png"
+  },
+  {
+    title: "KodeKloud Certificate",
+    description:
+      "Kode Kloud 100 days of DevOps",
+    link: "https://engineer.kodekloud.com/certificate-verification/df63d657-51cf-4a9a-a700-99b05be9114f",
+    image:"kodekloud.png"
+  },
   {
     title: "Oracle Certificate",
     description:
