@@ -65,13 +65,18 @@ const Skills = () => {
                 </div>
 
                 <div>
-                  <p className="font-semibold mb-1">Tools & Platforms:</p>
-                  <p className="text-xs">{skillsData.technical.tools.join(", ")}</p>
+                  <p className="font-semibold mb-1">Tools:</p>
+                  <p className="text-xs">{skillsData.technical.Tools.join(", ")}</p>
                 </div>
 
                 <div>
-                  <p className="font-semibold mb-1">IDE & Testing:</p>
-                  <p className="text-xs">{skillsData.technical.ideTesting.join(", ")}</p>
+                  <p className="font-semibold mb-1">DevOps & CI/CD:</p>
+                  <p className="text-xs">{skillsData.technical.DevOps_and_CICD.join(", ")}</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold mb-1">Cloud Platforms:</p>
+                  <p className="text-xs">{skillsData.technical.Cloud_Platforms.join(", ")}</p>
                 </div>
 
                 <div>

@@ -1,5 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Skills", link: "#skills" },
   { name: "Certifications", link: "#certifications" },
@@ -8,6 +9,8 @@ export const navItems = [
 ];
 
 export const gridItems = [
+  
+  
   {
     id: 1,
     title: "Final-year IT undergraduate at SLIIT with hands-on experience in full-stack development",
@@ -72,8 +75,25 @@ export const gridItems = [
 ];
 
 export const projects = [
+  
   {
     id: 1,
+    title: "E-Commerce Application using .NET and Blazor",
+    des: "Developed a full-stack e-commerce web application to deliver a secure and seamless online shopping experience, featuring product browsing, shopping cart functionality, order tracking, and Stripe payment integration. The system includes authentication using Google and Facebook OAuth 2.0 with role-based access control. The application was built using C#, .NET 9, Blazor Server, Entity Framework Core, ASP.NET Core Identity, Stripe API, and Bootstrap 5.",
+    img: "/ecommerce.png",
+    iconLists: ["/dotnet.svg", "/blazor.svg", "/csharp.svg", "/stripe.svg", "/sql.svg"],
+    link: "https://github.com/KanchanaKoralage1/Ecommerce_Web_App_with_.NET_and_Blazor.git",
+  },
+  {
+    id: 2,
+    title: "Application Tracking System using Machine Learning",
+    des: "Developed a full-stack Application Tracking System (ATS) that analyzes resumes against job descriptions to generate ATS scores, perform skill matching, and classify roles using machine learning techniques. The system includes features such as resume upload, CV filtering, candidate management, user authentication, profile management with image uploads, and a responsive dashboard interface. It was built using React with TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Python for machine learning (TF-IDF and resume classification), Multer, and RESTful APIs.",
+    img: "/ats.png",
+    iconLists: ["/react.svg", "/nodejs.svg", "/python.svg", "/mongo.svg"],
+    link: "https://github.com/KanchanaKoralage1/Application-tracking-system.git",
+  },
+  {
+    id: 3,
     title: "Social Media Application",
     des: "Developed a responsive full-stack social media platform with secure JWT-based authentication, Google OAuth2 login, and real-time messaging using WebSockets. Implemented core features such as post creation/editing, comments, likes, shares, follow/unfollow functionality, and real-time notifications. Designed RESTful APIs with Spring Boot and managed the frontend using React and Tailwind CSS for a modern, mobile-friendly UI. Integrated MySQL for persistent storage and ensured secure data flow through role-based access and token-based authorization.",
     img: "/social.png",
@@ -81,7 +101,7 @@ export const projects = [
     link: "https://github.com/KanchanaKoralage1/Social-Media-App",
   },
   {
-    id: 2,
+    id: 4,
     title: "Book Store Mobile App using React Native",
     des: "Amobile app where users can sign up, log in, and share book recommendations. Users can add, edit, or delete book posts with images and ratings.",
     img: "/book.png",
@@ -89,7 +109,7 @@ export const projects = [
     link: "https://github.com/KanchanaKoralage1/Book-store-Mobile-app",
   },
   {
-    id: 3,
+    id: 5,
     title: "Task Management WebApp",
     des: " A full-stack web application built to streamline team task assignment, tracking, and management. Designed with a responsive UI and secure role-based access for both users and admins, it enhances collaboration and productivity across all devices. Users can login and signup with their google account (OAuth 2.0) And Users can generate documents as well.",
     img: "/task.png",
@@ -97,7 +117,7 @@ export const projects = [
     link: "https://github.com/KanchanaKoralage1/Task-Management-WebApp",
   },
   {
-    id: 4,
+    id: 6,
     title: "Library management system",
     des: "This is my recently created full-stack web application that allows users to manage a digital library efficiently. Features include user authentication, book search, CRUD operations for books, image uploads, and a responsive UI. Built using the MERN stack with Cloudinary for image storage.",
     img: "/library.png",
@@ -148,6 +168,8 @@ export const skillsData = {
   technical: {
     programmingLanguages: [
       "JavaScript",
+      "TypeScript",
+      "C#",
       "Java",
       "Kotlin",
       "Python",
@@ -161,26 +183,29 @@ export const skillsData = {
       "Node.js",
       "Express.js",
       "Spring Boot",
+      ".NET ",
+      "Blazor",
     ],
-    databases: ["MongoDB", "MySQL", "SQLite"],
-    tools: [
+    databases: ["MongoDB", "MySQL", "SQLite", "PostgreSQL"],
+    DevOps_and_CICD: [
       "GitHub",
       "GitLab",
+      "GitHub Actions",
       "Bitbucket",
       "Jenkins",
       "Docker",
-      "Google Cloud Platform",
-      "Postman",
-      "Figma",
-      "SonarQube",
-      "Trello",
+      "Kubernetes",
+      "Terraform",
     ],
-    ideTesting: [
-      "VS Code",
-      "IntelliJ IDEA",
-      "Eclipse",
-      "Android Studio",
-      "JUnit",
+    Cloud_Platforms: [
+      "Azure",
+      "AWS",
+      "Oracle Cloud Infrastructure",
+      "Google Cloud Platform",
+    ],
+     Tools: [
+      "Trello",
+      "SonarQube",
       "Postman",
       "Selenium",
     ],
@@ -197,6 +222,21 @@ export const skillsData = {
 
 
 export const certifications = [
+  
+  {
+    title: "Oracle Certificate",
+    description:
+      "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=368A7098EA6DD0980960A37BB693684AF3EDACBFE1C65163D5A714F3DB6BEF7B",
+    image:"devops.png"
+  },
+  {
+    title: "KodeKloud Certificate",
+    description:
+      "Kode Kloud 100 days of DevOps",
+    link: "https://engineer.kodekloud.com/certificate-verification/df63d657-51cf-4a9a-a700-99b05be9114f",
+    image:"kodekloud.png"
+  },
   {
     title: "Oracle Certificate",
     description:
